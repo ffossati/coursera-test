@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app = 'LunchCheck'>
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>Lunch Check App</title>
+  </head>
+  <body>
+    <h1>Lunch Check Application</h1>
+    <div ng-controller='LunchCheckController'>
+      <div>
+      <input type="text" ng-model="lunch">
+      <button type="button" ng-click="lunchCheck()">Check</button>
+      Empty item will not be considered as an allowable value.
+      </div>
+      <div>
+        {{message}}
+      </div>
+    </div>
+  </body>
+</html>
