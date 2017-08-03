@@ -11,7 +11,6 @@ LoadingHttpInterceptor.$inject = ['$rootScope', '$q'];
  * listeners to determine when a request has been initiated.
  * When the response completes or a response error occurs,
  * we assume the request has ended and emit a finish event.
- * 
  */
 function LoadingHttpInterceptor($rootScope, $q) {
 
